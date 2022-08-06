@@ -36,8 +36,8 @@ jobs:
           context: ./src
           push: true
           tags: |
-            ${{secrets.DOCKERHUB_USER}}/kube-news:latest
-            ${{secrets.DOCKERHUB_USER}}/kube-news:${{github.run_number}}
+            matrixsoft1/kube-news:latest
+            matrixsoft1/kube-news:${{github.run_number}}
   CD:
     runs-on: ubuntu-latest
     needs: [CI]
