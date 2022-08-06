@@ -54,3 +54,4 @@ jobs:
           images: ${{secrets.DOCKERHUB_USER}}/kube-news:${{github.run_number}}
           manifests: |
             k8s/deployment.yaml
+            
